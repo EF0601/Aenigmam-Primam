@@ -1,3 +1,9 @@
+/*
+A WARNING TO THOSE WHO ARE NOT THE DEVELOPERS OF THE PROJECT AND IS A COMPETITOR OF THE EVENT
+IF YOU ARE CAUGHT LOOKING FOR INFORMATION IN THE CODE, YOU WILL NOT GET THE REWARD.
+FURTHERMORE, WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT ANYWAY.
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +13,7 @@
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: darkslategray;
+  padding: 50px;
 }
 
 .showcase {
@@ -25,6 +32,7 @@ code {
   border: 1px solid white;
   padding: 40px;
   text-align: center;
+  color: white;
 }
 
 input {
@@ -47,7 +55,7 @@ button {
 
 .verification {
   position: fixed;
-  display: block;
+  display: block; /*REMEMBER TO MAKE THIS INTO BLOCK WHEN PUBLISHING!!!!!!!*/
   width: 100%;
   height: 100%;
   top: 0;
@@ -65,4 +73,6 @@ button {
   font-size: 20px;
   color: white;
   transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 50px;
 }
