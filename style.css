@@ -55,7 +55,7 @@ button {
 
 .verification {
   position: fixed;
-  display: block; /*REMEMBER TO MAKE THIS INTO BLOCK WHEN PUBLISHING!!!!!!!*/
+  display: none; /*REMEMBER TO MAKE THIS INTO BLOCK WHEN PUBLISHING!!!!!!!*/
   width: 100%;
   height: 100%;
   top: 0;
