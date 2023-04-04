@@ -15,83 +15,10 @@
         style="border: 1px solid white;"><br><br>
       <button onclick="verify()">Verify</button>
     </div>
-
   </div>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      user-select: none;
-    }
+  
+  <link rel="stylesheet" href="style.css">
 
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      background-color: darkslategray;
-    }
-
-    .showcase {
-      background-color: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    code {
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    .main {
-      background-color: black;
-      border: 1px solid white;
-      padding: 40px;
-      text-align: center;
-    }
-
-    input {
-      background-color: darkslategray;
-      outline: none;
-      font-family: 'Courier New', Courier, monospace;
-      border: none;
-      color: white;
-      padding: 10px;
-    }
-
-    button {
-      background-color: darkslategray;
-      outline: none;
-      font-family: 'Times New Roman', Times, serif;
-      color: white;
-      border: none;
-      padding: 10px;
-    }
-
-    .verification {
-      position: fixed;
-      /* Sit on top of the page content */
-      display: block;
-      /* Played by default */
-      width: 100%;
-      /* Full width (cover the whole page) */
-      height: 100%;
-      /* Full height (cover the whole page) */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 2;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    .verificationText {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-size: 20px;
-      color: white;
-      transform: translate(-50%, -50%);
-    }
-
-  </style>
 </head>
 
 <body><br><br><br>
@@ -104,39 +31,11 @@
     </p>
   </div>
   <div class="main">
-    <input type="text" name="" id="" placeholder="The key to thee's wishes." onblur="inputVal()" class="input">
+    <input type="text" name="" id="" placeholder="The key to your wishes." onblur="inputVal()" class="input">
     <button onclick="turnsTheDoor()">Turn the door...</button>
   </div>
-  <script>
-    let valReplace = "";
-    let passReplace = "";
-    function inputVal() {
-      const val = document.querySelector('.input').value;
-      console.log(val);
-      valReplace = val;
-    }
-    function passInput() {
-      const val = document.querySelector('.pass').value;
-      console.log(val);
-      passReplace = val;
-    }
-    function verify() {
-      if(passReplace === "Tqe83"){
-        document.querySelector(".verification").style.display="none";
-      }
-      else{
-        location.reload()
-      }
-    }
-    function turnsTheDoor() {
-      if (valReplace === "R T") {
-        alert("You have intelligence.");
-      }
-      else {
-        alert("You lack specialty. You shall restart.");
-        location.reload()
-      }
-    }
+  <script src="ray.js">
+
   </script>
 </body>
 
