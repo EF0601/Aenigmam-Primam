@@ -5,7 +5,7 @@ FURTHERMORE, WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT ANYWAY.
 */
 //inputs
 let valReplace = "";
-let passReplace = "";
+
 //locations
 const keyhole = document.querySelector('.keyhole');
 //verify functions
@@ -23,11 +23,7 @@ function verify() {
   }
 }
 //puzzle functions
-function passInput() {
-  const val = document.querySelector('.pass').value;
-  console.log(val);
-  passReplace = val;
-}
+
 
 function turnsTheDoor() {
   if (valReplace === "R T") {
