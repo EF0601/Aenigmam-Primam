@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ray Bradbury</title>
+  <div class="verification">
+    <div class="verificationText">
+      <h1>Hold up! Are you just a robot or a human seeking the puzzle?</h1>
+      <p>Please, due to security issues please enter the verification code provided on the poster in which you are
+        notified of this event. You may not otherwise access the document.</p><br>
+      <input type="password" class="pass" placeholder="enter here" onblur="passInput()"
+        style="border: 1px solid white;"><br><br>
+      <button onclick="verify()">Verify</button>
+    </div>
+
+  </div>
   <style>
-    *{
+    * {
       padding: 0;
       margin: 0;
       user-select: none;
     }
-    body{
+
+    body {
       font-family: 'Times New Roman', Times, serif;
       background-color: darkslategray;
     }
-    .showcase{
+
+    .showcase {
       background-color: black;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    code{
+
+    code {
       font-family: 'Courier New', Courier, monospace;
     }
-    .main{
+
+    .main {
       background-color: black;
       border: 1px solid white;
       padding: 40px;
       text-align: center;
     }
-    input{
+
+    input {
       background-color: darkslategray;
       outline: none;
       font-family: 'Courier New', Courier, monospace;
@@ -38,7 +55,8 @@
       color: white;
       padding: 10px;
     }
-    button{
+
+    button {
       background-color: darkslategray;
       outline: none;
       font-family: 'Times New Roman', Times, serif;
@@ -47,15 +65,43 @@
       padding: 10px;
     }
 
+    .verification {
+      position: fixed;
+      /* Sit on top of the page content */
+      display: block;
+      /* Played by default */
+      width: 100%;
+      /* Full width (cover the whole page) */
+      height: 100%;
+      /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .verificationText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 20px;
+      color: white;
+      transform: translate(-50%, -50%);
+    }
+
   </style>
 </head>
+
 <body><br><br><br>
   <div class="showcase">
     <h1>You have worked this far, you must be of greatest intelligence.</h1>
-    <p>You shall be tested, by the best you has seen. Solve this, and you shalt access the next part of the Aenigmam. Oh and you may need this: <br><br><code>--.- -.-. .- .--. .-- -... ... / .... ...- ... / --.. ... .... .... ... ..-. --. / -.- .-- .... ...- / --- / --. -.. ---
+    <p>You shall be tested, by the best you has seen. Solve this, and you shalt access the next part of the Aenigmam. Oh
+      and you may need this: <br><br><code>--.- -.-. .- .--. .-- -... ... / .... ...- ... / --.. ... .... .... ... ..-. --. / -.- .-- .... ...- / --- / --. -.. ---
     --.- ... / .--. ... .... -.- ... ... -...</code><br><br> - Aenigmam Primam <br><br>
-    PS: Pepperoni Pizza
-  </p>
+      PS: Pepperoni Pizza
+    </p>
   </div>
   <div class="main">
     <input type="text" name="" id="" placeholder="The key to thee's wishes." onblur="inputVal()" class="input">
@@ -63,20 +109,35 @@
   </div>
   <script>
     let valReplace = "";
-    function inputVal(){
+    let passReplace = "";
+    function inputVal() {
       const val = document.querySelector('.input').value;
       console.log(val);
       valReplace = val;
     }
-    function turnsTheDoor(){
-      if (valReplace === "R T"){
-        alert("You have intelligence.");
+    function passInput() {
+      const val = document.querySelector('.pass').value;
+      console.log(val);
+      passReplace = val;
+    }
+    function verify() {
+      if(passReplace === "Tqe83"){
+        document.querySelector(".verification").style.display="none";
       }
       else{
+        location.reload()
+      }
+    }
+    function turnsTheDoor() {
+      if (valReplace === "R T") {
+        alert("You have intelligence.");
+      }
+      else {
         alert("You lack specialty. You shall restart.");
         location.reload()
       }
     }
   </script>
 </body>
+
 </html>
