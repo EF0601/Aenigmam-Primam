@@ -37,6 +37,7 @@ function turnsTheDoor() {
   else {
     keyhole.textContent = "You lack specialty. You shall restart.";
     keyhole.style.color = "red";
+    document.querySelector('.input').style.display="none";
     setTimeout(() => {
       location.reload();
     }, 2500);
