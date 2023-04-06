@@ -1,7 +1,6 @@
 /*
-A WARNING TO THOSE WHO ARE NOT THE DEVELOPERS OF THE PROJECT AND IS A COMPETITOR OF THE EVENT
-IF YOU ARE CAUGHT LOOKING FOR INFORMATION IN THE CODE, YOU WILL NOT GET THE REWARD.
-FURTHERMORE, WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT ANYWAY.
+<!-- A WARNING TO SEEKERS, SHOULD YOU BE CAUGHT LOOKING FOR INFORMATION WITHIN THE CODE, YOUR ENTRY IS TERMINATED.
+WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT -->
 */
 //inputs
 let valReplace = "";
@@ -26,7 +25,7 @@ function verify() {
 
 
 function turnsTheDoor() {
-  if (valReplace === "R T") {
+  if (valReplace === "cheese") {
     keyhole.textContent = "You have intelligence. You have solved it.";
     keyhole.style.color = "blue";
   }
