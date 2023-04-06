@@ -7,27 +7,24 @@ let valReplace = "";
 
 //locations
 const keyhole = document.querySelector('.keyhole');
-const linkk = document.querySelector('.link');
 //verify functions
 function inputVal() {
   const val = document.querySelector('.input').value;
   console.log(val);
   valReplace = val;
 }
-
 //puzzle functions
 
 
 function turnsTheDoor() {
-  if (valReplace === "cheese") {
+  if (valReplace === "(2,4)") {
     keyhole.textContent = "You have intelligence. You have solved it.";
     keyhole.style.color = "blue";
-    linkk.style.display = "block";
   }
   else {
     keyhole.textContent = "You lack specialty. You shall restart.";
     keyhole.style.color = "red";
-    document.querySelector('.input').style.display="none";
+    document.querySelector('.input').style.display = "none";
     setTimeout(() => {
       location.reload();
     }, 2500);
