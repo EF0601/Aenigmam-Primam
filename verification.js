@@ -1,7 +1,7 @@
 let passReplace = "";
 
 function verify() {
-  if (passReplace === "Tqe83") {
+  if (passReplace === "o8EbmT7u") {
     document.querySelector(".verification").style.display = "none";
   }
   else {

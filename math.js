@@ -17,7 +17,7 @@ function inputVal() {
 
 
 function turnsTheDoor() {
-  if (valReplace === "(2,4)") {
+  if (valReplace === "(2,2)") {
     keyhole.textContent = "You have intelligence. You have solved it.";
     keyhole.style.color = "blue";
   }
