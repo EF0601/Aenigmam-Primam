@@ -18,10 +18,11 @@ function inputVal() {
 function turnsTheDoor() {
   if (valReplace === "cheese") {
     document.querySelector('#reply').style.display="block";
+    document.querySelector('.input').disabled = true;
   }
   else {
     document.querySelector('#wrong').style.display="block";
-    document.querySelector('.input').style.display="none";
+    document.querySelector('.input').disabled=true;
     setTimeout(() => {
       location.reload();
     }, 2500);
