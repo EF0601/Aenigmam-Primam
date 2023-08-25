@@ -13,7 +13,8 @@ WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT -->
   <div class="verification">
     <div class="verificationText">
       <h1>Hold up! Are you a robot or a human seeking enrichment?</h1>
-      <p>Due to security issues, please enter the verification key provided on the poster. You may not otherwise access the document.</p><br>
+      <p>Due to security issues, please enter the verification key provided on the poster. You may not otherwise access
+        the document.</p><br>
       <input type="password" class="pass" placeholder="verification key" onblur="passInput()"
         style="border: 1px solid white;"><br><br>
       <button onclick="verify()">Verify</button>
@@ -26,16 +27,36 @@ WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT -->
 
 <body><br><br><br>
   <div class="showcase">
-    <h1>You have worked this far, but there is more to come. More than the mind can think of.</h1>
-    <p> Entering the correct passcode grants you access to the next piece. You may also need this: <br><br><h5 style="text-align: left;">April 20th, 2023 <br>TO: Agent 003 <br>FROM: Agent 007</h5><br><span style="text-align: left;">I've recovered most of the lost data, although the message is still unrecognizable. This is as far as I can think of. Can you use
-    your double 64 GB CPU Cores? Best of luck.</span><br>"<span style="border: 1px solid white; user-select: all;">WTJobFpYTmw=</span>"<br><br><h5 style="text-align: right;">- Agent 007</h5><br><br>
+    <h3 style="text-align: left;">April 20th, 2023 <br>TO: Agent 003 <br>FROM: Agent 007 <br>Title: You have worked this
+      far, but there is more to come.</h3>
+    <br>
+    <p>It's time for your first task. I've recovered most of the lost data, although the message is still
+      unrecognizable. Aenigmam HQ tipped me that you can use your double 64 GB CPU Cores to crack it. Best of
+      luck.<br><br>"<span style="border: 1px solid white; user-select: all;">WTJobFpYTmw=</span>"<br><br>
+    <h3 style="text-align: right;">- Agent 007</h3><br><br>
     </p>
   </div>
   <div class="main">
-    <input type="text" name="" id="" placeholder="The key to your wishes." onblur="inputVal()" class="input">
-    <button onclick="turnsTheDoor()">Turn the door...</button><br><br>
-    <p class="keyhole">Answer...</p><br>
+    <h3 style="text-align: left;">April 20th, 2023 <br>TO: Agent 007 <br>FROM: Agent 003 <br>Title: RE: You have worked
+      this
+      far, but there is more to come.</h3><br>
+    <p>I've got the answer. It's <input type="text" onblur="inputVal()" class="input"></p><br>
+    <button onclick="turnsTheDoor()">Send...</button><br><br>
+    <p class="keyhole"></p><br>
     <a href="./math.html" class="link">Go on...</a>
+  </div>
+  <div class="showcase" id="reply" style="display: none;">
+    <h3 style="text-align: left;">April 20th, 2023 <br>TO: Agent 003 <br>FROM: Agent 007 <br>Title: RE: RE: You have
+      worked this
+      far, but there is more to come.</h3><br>
+    <p>Good job agent. You've successfully helped Aenigmam HQ with a task. We've got another task for you though.
+      Whenever you're ready: <a href="./math.html">./math.html</a></p>
+  </div>
+  <div class="showcase" id="wrong" style="display: none;">
+    <h3 style="text-align: left;">April 20th, 2023 <br>TO: Agent 003 <br>FROM: Agent 007 <br>Title: RE: RE: You have
+      worked this
+      far, but there is more to come.</h3><br>
+    <p>I'm sorry agent. But you got it wrong. You'll have to restart.</p>
   </div>
   <script src="ray.js">
   </script>

@@ -5,9 +5,6 @@ WE CAN SEE WHO HAS DOWNLOADED THE GITHUB PROJECT -->
 //inputs
 let valReplace = "";
 
-//locations
-const keyhole = document.querySelector('.keyhole');
-const linkk = document.querySelector('.link');
 //verify functions
 function inputVal() {
   const val = document.querySelector('.input').value;
@@ -20,14 +17,12 @@ function inputVal() {
 
 function turnsTheDoor() {
   if (valReplace === "cheese") {
-    keyhole.textContent = "You have intelligence. You have solved it.";
-    keyhole.style.color = "blue";
-    linkk.style.display = "block";
+    document.querySelector('#reply').style.display="block";
+    document.querySelector('.input').disabled = true;
   }
   else {
-    keyhole.textContent = "You lack specialty. You shall restart.";
-    keyhole.style.color = "red";
-    document.querySelector('.input').style.display="none";
+    document.querySelector('#wrong').style.display="block";
+    document.querySelector('.input').disabled=true;
     setTimeout(() => {
       location.reload();
     }, 2500);

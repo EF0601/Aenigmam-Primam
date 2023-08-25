@@ -18,13 +18,12 @@ function inputVal() {
 
 function turnsTheDoor() {
   if (valReplace === "(2,2)") {
-    keyhole.textContent = "You have intelligence. You have solved it.";
-    keyhole.style.color = "blue";
+    document.querySelector('#reply').style.display = "block";
+    document.querySelector('.input').disabled = true;
   }
   else {
-    keyhole.textContent = "You lack specialty. You shall restart.";
-    keyhole.style.color = "red";
-    document.querySelector('.input').style.display = "none";
+    document.querySelector('#wrong').style.display = "block";
+    document.querySelector('.input').disabled = true;
     setTimeout(() => {
       location.reload();
     }, 2500);
